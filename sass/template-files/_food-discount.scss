@@ -1,0 +1,357 @@
+section.food-discount {
+    margin-top: 78px;
+
+    .main-content {
+        overflow: hidden;
+        border-radius: 20px;
+        position: relative;
+
+        @include bp(tablet-md) {
+            background: radial-gradient(173.12% 309.58% at 127.96% 157.71%, #bfc3e9 0%, rgba(191, 195, 233, 0.18) 100%)
+                /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+        }
+
+        //background: radial-gradient(108.25% 150.46% at 59.01% 67.1%, #005BA2 0%, #003D6C 100%);
+
+        @include bp(tablet-sm) {
+            // background-image: url("../images/fullbg.png");
+            // height: 100%;
+            // width: 100%;
+            // background-position: 100% 100%;
+            // background-size: cover;
+            // background-repeat: no-repeat;
+        }
+
+        .text-content {
+            color: #7e83a5;
+            padding: 111px 0 111px 111px;
+
+            .p-text {
+                position: relative;
+                @include font-rem(20px, 26px);
+                font-weight: 700;
+                margin-bottom: 0px;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    bottom: -6px;
+                    left: 0;
+                    //color: color(white);
+                    height: 4px;
+                    width: 47px;
+                    background-color: #7e83a5;
+                    border-radius: 91px;
+
+                    @include bp(tablet-sm) {
+                        background-color: #b0b2dd;
+                        height: 3px;
+                        width: 47px;
+                    }
+                }
+
+                @include bp(tablet-sm) {
+                    @include font-rem(14px, 18px);
+                }
+            }
+
+            h3 {
+                @include font-rem(20px, 26px);
+                padding-top: 20px;
+                padding-bottom: 20px;
+                color: color(magic-black);
+            }
+
+            .p-text2 {
+                @include font-rem(20px, 26px);
+                font-weight: 400;
+                color: color(magic-grey);
+
+                @include bp(tablet-sm) {
+                    @include font-rem(14px, 20px);
+                }
+            }
+
+            .btn {
+                margin-top: 24px;
+                color: #2b2c3e;
+                box-shadow: 0px 3px 8px rgba(151, 173, 192, 0.34);
+                transition: all 0.3s;
+                &:hover {
+                    color: #ffffff;
+                    background: #005ba2;
+                    border: 1px solid #ffffff;
+                    box-shadow: 0px 8px 16px rgba(151, 173, 192, 0.4);
+                }
+            }
+
+            @include bp(tablet-sm) {
+                padding: 40px 20px 0px;
+                // margin-bottom: -20px;
+                margin-bottom: -37px;
+            }
+
+            @include bp(mobile) {
+                margin-bottom: -101px;
+            }
+        }
+
+        .image-content {
+            //border-radius: 15px;
+
+            @include bp(tablet-md) {
+                position: relative;
+                background: url("../images/food-gey.png");
+                //background: radial-gradient(108.25% 150.46% at 59.01% 67.1%, #005BA2 0%, #003D6C 100%);
+
+                height: 100%;
+
+                background-position: 124% 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            .image-dish-m {
+                @include bp(tablet-md) {
+                    display: none;
+                }
+            }
+
+            @include bp(tablet-sm) {
+                // position: relative;
+                // background-image: url("../images/mb-bg.png");
+                // height: 100%;
+                // background-position: 100% 100%;
+                // background-size: cover;
+                // background-repeat: no-repeat;
+                // padding-top: 235px;
+            }
+
+            .image-dish-d {
+                @include bp(tablet-sm) {
+                    object-fit: contain;
+                    margin-top: 10px;
+                }
+                @include bp(sm) {
+                    width: 193px;
+                    height: 222.16px;
+                }
+            }
+
+            @include bp(mobile) {
+                padding-top: 211px;
+            }
+
+            &:before {
+                @include bp(tablet-md) {
+                    background: url("../images/dish1.png");
+                    content: "";
+                    display: block;
+                    height: 100%;
+                    position: absolute;
+                    width: 100%;
+                    //background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position-x: right;
+                }
+
+                //----------org--------------------//
+                // @include bp(tablet-sm) {
+
+                //     content: url("../images/m-dish1.png");
+                //     display: block;
+                //     height: 100%;
+                //     position: absolute;
+                //     width: 100%;
+                //     //background-size: contain;
+                //     background-repeat: no-repeat;
+                //     background-position-x: right;
+                //     top: 0;
+                //     right: -89%;
+                // }
+
+                //----------end--------------------//
+
+                @include bp(mobile) {
+                    top: 10%;
+                    right: -89%;
+                }
+            }
+
+            &:after {
+                @include bp(tablet-md) {
+                    background: url("../images/dish3.png");
+                    content: "";
+                    display: block;
+                    height: 100%;
+                    position: absolute;
+                    width: 100%;
+
+                    background-repeat: no-repeat;
+
+                    top: 77.2%;
+                    left: -23%;
+                }
+
+                //----------org--------------------//
+                // @include bp(tablet-sm) {
+                //     // background: url("../images/mobile-dm.png");
+                //     content: url("../images/m-dish3.png");
+                //     display: block;
+                //     height: 100%;
+                //     position: absolute;
+                //     width: 100%;
+
+                //     background-repeat: no-repeat;
+
+                //     top: 91.2%;
+                //     left: -61.1%;
+                //     // transform: rotate(90deg);
+                // }
+                //----------end--------------------//
+                @media (width: 1024px) {
+                    top: 79.2%;
+                }
+
+                @include bp(mobile) {
+                    top: 74%;
+                    left: 0%;
+                }
+            }
+
+            img {
+                @include bp(tablet-md) {
+                    padding: 57px 0px 57px 0;
+                }
+
+                @media (width: 1024px) {
+                    padding: 0;
+                    margin-left: -27px;
+                    margin-top: 97px;
+                }
+            }
+
+            .mobile-div {
+                @include bp(tablet-sm) {
+                    display: flex;
+                    text-align: center;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    top: 0%;
+                    left: 0;
+                    padding-top: 21px;
+                    @include bp(tablet-sm) {
+                        padding-top: 80px;
+                    }
+                }
+
+                &::before {
+                    @include bp(tablet-sm) {
+                        content: "";
+                        background-image: url("../images/m-dish1.png");
+                        display: block;
+                        height: 100%;
+                        position: absolute;
+                        width: 100%;
+                        //background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position-x: right;
+                        top: -10%;
+                        right: 0%;
+                    }
+
+                    @include bp(mobile-xs) {
+                        background-image: url("../images/d4-m.png");
+                        top: 31%;
+                    }
+                }
+
+                &::after {
+                    @include bp(tablet-sm) {
+                        // background: url("../images/mobile-dm.png");
+                        content: "";
+                        background-image: url("../images/m-dish3.png");
+                        display: block;
+                        height: 100%;
+                        position: absolute;
+                        width: 100%;
+
+                        background-repeat: no-repeat;
+
+                        bottom: -74%;
+                        left: 0%;
+                        // transform: rotate(90deg);
+                    }
+
+                    @include bp(mobile-xs) {
+                        background-image: url("../images/d3-m.png");
+                        bottom: -84%;
+                    }
+                }
+
+                .image-dish-m {
+                    @include bp(mobile) {
+                        position: relative;
+
+                        left: 0%;
+                        bottom: 39px;
+                    }
+
+                    @include bp(mobile-xs) {
+                        bottom: -64px;
+                    }
+                }
+            }
+
+            @media (width: 1024px) {
+                background-position: 105% 100%;
+            }
+
+            @include bp(tablet-sm) {
+                position: relative;
+                background-image: url("../images/mb-bg.png");
+                height: 100%;
+                background-position: 100% 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin-bottom: 60px;
+                padding-top: 115px;
+            }
+
+            @include bp(mobile-xs) {
+                padding-top: 0px;
+            }
+        }
+
+        @include bp(tablet-sm) {
+            // position: absolute;
+            // background-image: url("../images/mobile-curve.png");
+            // height: 100%;
+            // background-position: 100% 100%;
+            // background-size: cover;
+            // background-repeat: no-repeat;
+        }
+
+        &:before {
+            @include bp(tablet-sm) {
+                position: absolute;
+
+                background: radial-gradient(
+                    173.12% 309.58% at 127.96% 157.71%,
+                    #bfc3e9 0%,
+                    rgba(191, 195, 233, 0.18) 100%
+                );
+
+                width: 100%;
+                height: 100%;
+                content: "";
+                display: block;
+                z-index: -1;
+            }
+        }
+    }
+    @include bp(tablet-sm) {
+        margin-top: 50px;
+    }
+}

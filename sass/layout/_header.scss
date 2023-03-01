@@ -1,0 +1,11 @@
+header {
+    height: 71px;
+    background-image: url("../images/header.svg");
+    background-size: auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+    @include bp(mobile) {
+        height: 56px;
+        background-image: url("../images/header-m.svg");
+    }
+}

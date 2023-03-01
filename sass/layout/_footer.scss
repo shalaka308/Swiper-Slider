@@ -1,0 +1,13 @@
+footer {
+    height: 359px;
+    background-image: url("../images/footer.svg");
+    background-size: auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: #d8d7d7;
+    @include bp(mobile) {
+        height: 1060px;
+        background-image: url("../images/footer-m.svg");
+        background-color: #dddcdc;
+    }
+}

@@ -1,0 +1,121 @@
+.request-callback-form {
+    .modal-dialog {
+        background: #ffffff;
+        border-radius: 15px;
+        max-width: 700;
+        padding: 50px;
+        min-height: unset;
+        transform: translate(0, -50%) !important;
+        top: 50%;
+        @include bp(mobile) {
+            padding: 30px;
+            margin: 0 20px;
+        }
+        .modal-content {
+            padding: 0;
+            border: none;
+            border-radius: unset;
+            .modal-header {
+                border: none;
+                padding: 0;
+                justify-content: space-between;
+
+                .modal-title {
+                    @include font-rem(32px, 42px);
+                    font-weight: 700;
+                    color: #2b2c3e;
+                    margin-bottom: 30px;
+                    @include bp(mobile) {
+                        @include font-rem(16px, 21px);
+                    }
+                }
+                button.close {
+                    opacity: unset;
+                }
+            }
+        }
+        .modal-body {
+            padding: 0;
+            .form-group {
+                margin-bottom: 28px;
+
+                .form-control {
+                    padding: 5px 0;
+                }
+                label {
+                    @include font-rem(12px, 18px);
+                    font-weight: 400;
+                    color: #60738e;
+                    margin-bottom: 0;
+                }
+                input {
+                    @include font-rem(12px, 20px);
+                    font-weight: 600;
+                    color: #2b2c3e;
+                    border-radius: unset;
+                    border: unset;
+                    border-bottom: 1px solid #bebcbc;
+                }
+                ::placeholder {
+                    @include font-rem(12px, 20px);
+                    font-weight: 600;
+                    color: #2b2c3e;
+                }
+            }
+        }
+        .modal-footer {
+            padding: 0;
+            justify-content: flex-start;
+            line-height: 0;
+            margin-bottom: 30px;
+
+            .btn {
+                background: #005ba2;
+                box-shadow: non;
+                border-radius: 28px;
+                padding: 16px 60px 15.5px;
+                font-weight: 700;
+                @include font-rem(14px, 19px);
+                margin: 0;
+
+                &:hover {
+                    color: #fff;
+                    text-decoration: none;
+                }
+                &:focus {
+                    outline: none;
+                }
+                @include bp(mobile) {
+                    width: 100%;
+                }
+            }
+        }
+        .disabled {
+            opacity: 0.4;
+            pointer-events: none;
+        }
+        .disclaimer-txt span {
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 700;
+            letter-spacing: 0.2px;
+            color: #2b2c3e;
+        }
+        .success-text {
+            p {
+                margin: 0;
+                img {
+                    margin: 0 10px 0 0;
+                }
+                span {
+                    font-family: "Open Sans";
+                    font-style: normal;
+                    font-weight: 700;
+                    @include font-rem(14px, 20px);
+                    letter-spacing: 0.2px;
+                    color: #009a06;
+                }
+            }
+        }
+    }
+}

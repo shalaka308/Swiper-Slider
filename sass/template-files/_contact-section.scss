@@ -1,0 +1,132 @@
+.contact-area {
+    // background: #f8fcff;
+    padding: 100px 0;
+
+    @include bp(tablet-sm) {
+        padding-top: 65px;
+        padding-bottom: 25px;
+    }
+
+    .contact-title {
+        text-align: center;
+        max-width: 471.58px;
+        margin: 0 auto 123px;
+
+        h3 {
+            margin-bottom: 20px;
+        }
+
+        @include bp(tablet-sm) {
+            margin: 0 auto 50px;
+        }
+    }
+
+    .contact-item {
+        border-radius: 20px;
+        padding: 62px 32px 32px;
+        position: relative;
+        z-index: 1;
+
+        @include bp(tablet-sm) {
+            padding: 61px 19px 19px;
+            margin-bottom: 58px;
+            max-width: 440px;
+            width: 100%;
+            margin: 0 auto 70px;
+        }
+
+        p {
+            @include font-rem(20px, 26px);
+            color: #2b2c3e;
+            margin-bottom: 4px;
+
+            @include bp(tablet-sm) {
+                @include font-rem(14px, 18px);
+                margin-bottom: 8px;
+            }
+        }
+
+        a {
+            @include font-rem(20px, 26px);
+            font-weight: 700;
+            color: #2b2c3e;
+
+            @include bp(tablet-sm) {
+                @include font-rem(14px, 18px);
+            }
+        }
+
+        .contact-img {
+            position: absolute;
+            bottom: 0;
+            right: 28px;
+            z-index: -1;
+
+            @include bp(tablet-sm) {
+                display: block;
+
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+
+            .mobile-img {
+                display: none;
+
+                @include bp(tablet-sm) {
+                    display: block;
+                    width: 131.34px;
+                    height: 166.73px;
+                }
+            }
+
+            .desktop-img {
+                @include bp(tablet-sm) {
+                    display: none;
+                }
+            }
+        }
+
+        .contact-txt {
+            max-width: 250px;
+
+            @include bp(tablet-sm) {
+                max-width: 172px;
+            }
+        }
+
+        &.light {
+            background: #fbf4da;
+            // &:after {
+            //     content: url("../images/contact-email.png");
+            //     @include bp(tablet-sm) {
+            //         content: url("../images/contact-email-m.png");
+            //     }
+            // }
+        }
+
+        &.green {
+            background: #dff2d9;
+            // &:after {
+            //     content: url("../images/contact-call.png");
+            //     @include bp(tablet-sm) {
+            //         content: url("../images/contact-call-m.png");
+            //     }
+            //     @include bp(tablet-sm) {
+            //         display: none;
+            //     }
+            // }
+        }
+
+        &:after {
+            position: absolute;
+            bottom: -5px;
+            right: 27px;
+            z-index: -1;
+
+            @include bp(tablet-sm) {
+                right: 0;
+            }
+        }
+    }
+}
