@@ -4,11 +4,9 @@
             <div class="col-lg-12">
                 <div class="choices-head">
                     <h2>Explore our other <br>
-                        Savings Accounts</h2>
-                    <p class="choice-text">Get a chance to enjoy lifestyle benefits, insurance, attractive cashbacks,
-                        generous reward points
-                        and
-                        much more</p>
+                        Lorem</h2>
+                    <p class="choice-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                 </div>
 
                 <div class="choices-slider-main text-center">
